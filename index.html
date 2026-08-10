@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Theme Switcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- The main container evaluates which radio button is checked -->
+  <main class="theme-app">
+    
+    <!-- Theme Switcher Controls -->
+    <fieldset class="theme-switcher">
+      <legend>Select Theme</legend>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" id="theme-light" name="theme" checked>
+          <label for="theme-light">Light</label>
+        </div>
+        
+        <div class="radio-option">
+          <input type="radio" id="theme-dark" name="theme">
+          <label for="theme-dark">Dark</label>
+        </div>
+
+        <div class="radio-option">
+          <input type="radio" id="theme-neon" name="theme">
+          <label for="theme-neon">Neon</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Preview Card (Markup never changes) -->
+    <article class="card">
+      <h2>CSS is Powerful</h2>
+      <p>This card seamlessly transitions between themes using CSS design tokens and the :has() selector. No JavaScript was required to build this interface.</p>
+      <button class="btn">Explore Design</button>
+    </article>
+
+  </main>
+
+</body>
+</html>
